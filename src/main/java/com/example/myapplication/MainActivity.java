@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Double> latitude = new ArrayList<>();
         ArrayList<Double> longitude = new ArrayList<>();
         ArrayList<String> address=new ArrayList<>();
-        Cursor cursor;
+        Cursor cursor= null;
         String Q ="";
 
         Log.v("roadData","아래에서 선택지 고르는중");
@@ -101,8 +101,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        //SQL명령으로 읽기
-        cursor = db.rawQuery(Q,null);
+        if(db!=null)
+            cursor = db.rawQuery(Q,null);
+        else
+            Log.v("roadData","cursor로 읽어오는 중");
 
         if(cursor.moveToFirst()) {                      //커서객체 데이터의 첫번째 행으로 즉 db의 첫번째 행
 
