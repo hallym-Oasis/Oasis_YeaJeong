@@ -21,6 +21,16 @@ android {
         }
     }
 }
+buildscript {
+    repositories {
+        jcenter() // or mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+    }
+}
+
+
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
