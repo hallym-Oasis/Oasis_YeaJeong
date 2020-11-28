@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test_Main"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_Drows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="졸음쉼터" />
+
+    <Button
+        android:id="@+id/btn_Box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="안심택배함" />
+    <Button
+        android:id="@+id/btn_S4Women"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="여성쉼터" />
+
+    <Button
+        android:id="@+id/btn_Toilet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="공공화장실" />
+
+    <Button
+        android:id="@+id/btn_WIFI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="WIFI" />
+
+
+</LinearLayout>
